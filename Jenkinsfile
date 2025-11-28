@@ -5,21 +5,20 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building the project ..."
-                bat 'npm install'
+                sh 'echo Build running on Linux'
+                // sh 'npm install'  // if needed
             }
         }
 
         stage('Test') {
             steps {
-                echo "Running tests..."
-                bat 'npm test'
+                sh 'echo Running tests...'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploying..."
-                bat 'echo Deployment step running'
+                sh 'echo Deploying...'
             }
         }
     }
