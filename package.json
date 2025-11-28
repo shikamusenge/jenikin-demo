@@ -1,0 +1,8 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Running tests\"",
+    "deploy": "echo \"Deploying app\""
+  }
+}
